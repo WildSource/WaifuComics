@@ -20,9 +20,13 @@ public class ComicModel
 	private String artist;
 
 	private int nbPages;
+	/**
+	 * Default Constructor for spring boot
+	 */
+	public ComicModel(){}
 
 	/**
-	 * Default constructor. Will throw BeanCreationException if any String are null
+	 * Actual constructor used. Will throw BeanCreationException if any String are null
 	 * and/or int are 0 or negative
 	 * 
 	 * @param name
