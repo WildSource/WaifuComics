@@ -5,7 +5,10 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.BeanCreationException;
 import org.springframework.stereotype.Component;
 
+import javax.persistence.Entity;
+
 @Component
+@Entity
 /**
  * This POJO represent data about a specific comic
  * 
