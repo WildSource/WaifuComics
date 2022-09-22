@@ -6,8 +6,6 @@ import static org.junit.Assert.fail;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.waifucomics.waifuwebapp.comic.ComicModel;
-
 public class ComicModelTest
 {
 	private ComicModel model;

@@ -1,5 +1,6 @@
 package com.waifucomics.waifuwebapp.artist;
 
+import com.sun.istack.NotNull;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.Entity;
@@ -15,6 +16,7 @@ public class Artist
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    @NotNull
     private String name;
 
     public Artist() {}

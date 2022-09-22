@@ -1,14 +1,18 @@
 package com.waifucomics.waifuwebapp.artist;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.Optional;
 
+@Component
 @Service
 public class ArtistService
 {
     private ArtistRepository repository;
+
+    public ArtistService() {}
 
     @Autowired
     public ArtistService(ArtistRepository repository)
@@ -34,9 +38,19 @@ public class ArtistService
         getRepository().save(artist);
     }
 
-    public void updateArtistName(String name)
+    // update
+    public void updateArtistNameWithArtist(Artist artistToChange, String name)
     {
-        getRepository().
+        artistToChange.setName(name);
+        getRepository().save(artistToChange);
+    }
+
+    // update
+    public void updateArtistNameWithID(Long id, String name)
+    {
+        Optional<Artist> artistToChange = getRepository().findById(id);
+        artistToChange.get().setName(name);
+        getRepository().save(artistToChange.get());
     }
 
     //delete

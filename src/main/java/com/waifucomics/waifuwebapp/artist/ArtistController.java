@@ -1,6 +1,7 @@
 package com.waifucomics.waifuwebapp.artist;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Optional;
@@ -10,6 +11,8 @@ public class ArtistController
 {
     private ArtistService service;
 
+    public ArtistController() {}
+
     @Autowired
     public ArtistController(ArtistService service)
     {
@@ -17,6 +20,7 @@ public class ArtistController
     }
 
     // read
+    @GetMapping("/")
     public Optional<Artist> GETArtistById(Long id)
     {
         return getService().readArtistById(id);
@@ -34,9 +38,16 @@ public class ArtistController
         getService().createArtist(artist);
     }
 
-    public void UPDATEArtistName(String name)
+    // update
+    public void UPDATEArtistNameWithArtist(Artist artistToChange, String name)
     {
-        getService().
+        getService().updateArtistNameWithArtist(artistToChange, name);
+    }
+
+    // update
+    public void UPDATEArtistNameWithId(Long id, String name)
+    {
+        getService().updateArtistNameWithID(id, name);
     }
 
     // delete
