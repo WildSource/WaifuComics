@@ -20,7 +20,7 @@ public class WaifuComicsApplication
 	{
 		return (args) ->
 		{
-			repository.save(new Artist("ShadMan"));
+			repository.deleteAll();
 			System.out.println(repository.findAll());
 		};
 	}
