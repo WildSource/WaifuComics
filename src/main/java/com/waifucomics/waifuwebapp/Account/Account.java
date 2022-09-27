@@ -72,4 +72,14 @@ public class Account
     {
         isArtist = artist;
     }
+
+    @Override
+    public String toString() {
+        return "Account{" +
+                "id=" + id +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
+                ", isArtist=" + isArtist +
+                '}';
+    }
 }
