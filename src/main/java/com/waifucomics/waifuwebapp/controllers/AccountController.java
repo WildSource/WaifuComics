@@ -3,14 +3,12 @@ package com.waifucomics.waifuwebapp.controllers;
 import com.waifucomics.waifuwebapp.entitites.Account;
 import com.waifucomics.waifuwebapp.services.AccountService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PutMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
 
 @RestController
+@RequestMapping("/account")
 public class AccountController {
     private AccountService service;
 

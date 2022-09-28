@@ -20,8 +20,7 @@ public class Comic {
 
     public Comic() {}
 
-    public Comic(Long id, String comicName, int nbPage, String artistName) {
-        this.id = id;
+    public Comic(String comicName, int nbPage, String artistName) {
         this.comicName = comicName;
         this.nbPage = nbPage;
         this.artistName = artistName;
