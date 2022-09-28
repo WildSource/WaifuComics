@@ -1,7 +1,6 @@
-package com.waifucomics.waifuwebapp.artist;
+package com.waifucomics.waifuwebapp.entitites;
 
 import com.sun.istack.NotNull;
-import org.springframework.stereotype.Component;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,7 +8,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-@Component
 public class Artist
 {
     @Id

@@ -1,7 +1,6 @@
-package com.waifucomics.waifuwebapp.comic;
+package com.waifucomics.waifuwebapp.entitites;
 
 import com.sun.istack.NotNull;
-import org.springframework.stereotype.Component;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,7 +8,6 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-@Component
 public class Comic {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -18,7 +16,6 @@ public class Comic {
     private String comicName;
     @NotNull
     private int nbPage;
-    @NotNull
     private String artistName;
 
     public Comic() {}

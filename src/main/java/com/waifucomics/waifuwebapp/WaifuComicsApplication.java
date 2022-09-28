@@ -1,11 +1,9 @@
 package com.waifucomics.waifuwebapp;
 
-import com.waifucomics.waifuwebapp.artist.Artist;
-import com.waifucomics.waifuwebapp.artist.ArtistRepository;
+import com.waifucomics.waifuwebapp.repositories.ArtistRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
