@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class IndexView {
     ComicController controller;
-    Comic comic;
 
     @Autowired
     public IndexView(ComicController controller) {
@@ -22,8 +21,6 @@ public class IndexView {
 
     @GetMapping()
     String helloComic(Model model) {
-        this.comic = controller.READComic(3L);
-        model.addAttribute("name", comic.getComicName());
         return "index/index.html";
     }
 }

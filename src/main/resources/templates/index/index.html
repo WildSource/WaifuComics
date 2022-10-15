@@ -6,6 +6,23 @@
     <link th:href="@{/index/index.css}" rel="stylesheet" />
 </head>
 <body>
-    <p th:text="${name}"></p>
+    <div id="Title">
+        <h1>Waifu Comics</h1>
+    </div>
+    <div id="navbar">
+        <ul>
+            <li>
+                <form action="/">
+                    <input type="submit" value="Home" />
+                </form>
+            </li>
+            <li>
+                <form action="/about">
+                    <input type="submit" value="About" />
+                </form>
+            </li>
+        </ul>
+    </div>
+
 </body>
 </html>
