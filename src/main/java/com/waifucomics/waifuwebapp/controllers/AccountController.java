@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/account")
+@RequestMapping("v1/account")
 public class AccountController {
     private AccountService service;
 

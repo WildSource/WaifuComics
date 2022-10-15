@@ -3,12 +3,12 @@ package com.waifucomics.waifuwebapp.controllers;
 import com.waifucomics.waifuwebapp.entitites.Comic;
 import com.waifucomics.waifuwebapp.services.ComicService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Optional;
 
 @RestController
-@RequestMapping("/comic")
+@RequestMapping("v1/comic")
 public class ComicController {
 
     private ComicService service;
@@ -18,10 +18,10 @@ public class ComicController {
         this.service = service;
     }
 
-    @GetMapping
-    public Optional<Comic> READComic(Long id)
+    @GetMapping("/{id}")
+    public Comic READComic(@PathVariable Long id)
     {
-        return this.service.readComicById(id);
+        return this.service.readComicById(id).get();
     }
 
     @PutMapping

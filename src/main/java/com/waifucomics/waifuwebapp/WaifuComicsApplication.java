@@ -19,12 +19,6 @@ public class WaifuComicsApplication
 	{
 		return (args) ->
 		{
-			repository.save(new Comic("Game Of Thrones", 300, "George R. R. Martin"));
-			repository.save(new Comic("The Hobbit", 250, "J R. R. Tolkien"));
-			repository.save(new Comic("Harry Potter", 320, "J. K. Rowling"));
-			repository.save(new Comic("The Shining", 180, "Stephen King"));
-			repository.save(new Comic("Overlord", 120, "Kugane Maruyama"));
-
 			System.out.println(repository.findAll());
 		};
 	}
