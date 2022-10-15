@@ -36,3 +36,7 @@ li a {
 h1 {
     color: white;
 }
+
+#searchBar {
+     float: right;
+}
