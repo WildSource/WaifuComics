@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("v1/artist")
+@RequestMapping("v1/server/artist")
 public class ArtistController
 {
     private ArtistService service;

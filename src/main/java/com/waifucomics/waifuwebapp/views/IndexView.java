@@ -7,6 +7,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+/**
+ * Landing page view
+ */
 @Controller
 public class IndexView {
     ComicController controller;
@@ -17,10 +20,10 @@ public class IndexView {
         this.controller = controller;
     }
 
-    @GetMapping("/index")
+    @GetMapping()
     String helloComic(Model model) {
         this.comic = controller.READComic(3L);
         model.addAttribute("name", comic.getComicName());
-        return "index";
+        return "index/index.html";
     }
 }

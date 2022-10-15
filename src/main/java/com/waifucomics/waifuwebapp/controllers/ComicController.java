@@ -3,12 +3,11 @@ package com.waifucomics.waifuwebapp.controllers;
 import com.waifucomics.waifuwebapp.entitites.Comic;
 import com.waifucomics.waifuwebapp.services.ComicService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 
 @RestController
-@RequestMapping("v1/comic")
+@RequestMapping("v1/server/comic")
 public class ComicController {
 
     private ComicService service;
