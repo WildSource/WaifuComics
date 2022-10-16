@@ -36,3 +36,7 @@ li a {
 #searchBar {
      float: right;
 }
+
+#login {
+    text-align: center;
+}

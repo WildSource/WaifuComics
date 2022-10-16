@@ -6,31 +6,7 @@
     <link th:href="@{/index/index.css}" rel="stylesheet" />
 </head>
 <body>
-    <div id="Title">
-        <h1>Waifu Comics</h1>
-    </div>
-    <div id="navbar">
-        <ul>
-            <li>
-                <form action="/">
-                    <input type="submit" value="Home" />
-                </form>
-            </li>
-            <li>
-                <form action="/about">
-                    <input type="submit" value="About" />
-                </form>
-            </li>
-            <li>
-                <form action="/register">
-                    <input type="submit" value="Register" />
-                </form>
-            </li>
-            <form>
-                <input id="searchBar" type="text" placeholder="Search.."/><br/>
-            </form>
-        </ul>
-    </div>
+    <div th:replace="header/header.html :: header"></div>
 
 </body>
 </html>

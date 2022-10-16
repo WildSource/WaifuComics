@@ -37,6 +37,6 @@ li a {
      float: right;
 }
 
-#registrationForm {
-    float: center;
+#register {
+    text-align: center;
 }
