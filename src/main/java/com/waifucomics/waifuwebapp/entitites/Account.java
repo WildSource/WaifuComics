@@ -29,6 +29,7 @@ public class Account
     {
         this.username = username;
         this.password = password;
+        this.isArtist = false;
     }
 
     public Long getId()

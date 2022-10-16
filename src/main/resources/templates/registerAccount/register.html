@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>WaifuComics</title>
+    <link th:href="@{/accountPost/registeraccount.css}" rel="stylesheet" />
+</head>
+<body>
+  <div id="Title">
+    <h1>Waifu Comics</h1>
+  </div>
+  <div id="navbar">
+    <ul>
+      <li>
+        <form action="/">
+          <input type="submit" value="Home" />
+        </form>
+      </li>
+      <li>
+        <form action="/about">
+          <input type="submit" value="About" />
+        </form>
+      </li>
+      <input id="searchBar" type="text" placeholder="Search.."/><br/>
+    </ul>
+    <form id="registrationForm" action="#" th:action="@{/registerSucess}" method="post" th:object="${account}">
+      <label>Username:</label>
+      <input type="text" th:field="*{username}" /><br/>
+      <label>password:</label>
+      <input type="text" th:field="*{password}" /><br/>
+      <button type="submit">Register</button>
+    </form>
+    <h1>This is the register page</h1>
+</div>
+</body>
+</html>

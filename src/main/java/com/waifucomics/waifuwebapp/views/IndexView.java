@@ -1,7 +1,6 @@
 package com.waifucomics.waifuwebapp.views;
 
 import com.waifucomics.waifuwebapp.controllers.ComicController;
-import com.waifucomics.waifuwebapp.entitites.Comic;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
