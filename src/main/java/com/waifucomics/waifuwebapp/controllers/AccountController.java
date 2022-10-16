@@ -23,6 +23,11 @@ public class AccountController {
         return this.service.readAccountById(id);
     }
 
+    @PostMapping
+    public void POSTAccount(String username, String password) {
+        service.createAccount(new Account(username,password));
+    }
+
     @PutMapping
     public void PUTAccount(Long id, String username)
     {
