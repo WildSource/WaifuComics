@@ -7,6 +7,6 @@ Frontend: Angular and/or Thymeleaf
 
 Backend: Spring Boot 
 
-Database: MySQL
+Database: MySQL/ h2 for testing and developing only
 
 
