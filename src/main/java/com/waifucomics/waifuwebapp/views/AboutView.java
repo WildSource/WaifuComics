@@ -1,6 +1,6 @@
 package com.waifucomics.waifuwebapp.views;
 
-import com.waifucomics.waifuwebapp.controllers.AccountController;
+import com.waifucomics.waifuwebapp.controllers.ComicController;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class AboutView {
-    AccountController controller;
+    ComicController controller;
 
     @Autowired
-    public AboutView(AccountController controller) {
+    public AboutView(ComicController controller) {
         this.controller = controller;
     }
 

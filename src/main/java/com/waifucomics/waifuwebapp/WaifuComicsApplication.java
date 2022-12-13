@@ -1,7 +1,6 @@
 package com.waifucomics.waifuwebapp;
 
 import com.waifucomics.waifuwebapp.entitites.Comic;
-import com.waifucomics.waifuwebapp.repositories.AccountRepository;
 import com.waifucomics.waifuwebapp.repositories.ComicRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -16,12 +15,11 @@ public class WaifuComicsApplication
 	}
 
 	@Bean
-	public CommandLineRunner demo(ComicRepository comicRepository, AccountRepository accountRepository)
+	public CommandLineRunner demo(ComicRepository comicRepository)
 	{
 		return (args) ->
 		{
 			System.out.println(comicRepository.findAll());
-			System.out.println(accountRepository.findAll());
 		};
 	}
 }
